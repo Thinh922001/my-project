@@ -38,7 +38,7 @@ a {
 /* ======== Header ======== */
 .header {
     background-color: #e6f0ff;
-    height: 100vh;
+    height: calc(100vh - 90px);
     position: relative;
 }
 
@@ -60,11 +60,19 @@ a {
 
 /* ********************************** */
 
+.header-fixed {
+    position: sticky;
+    top: 0;
+    z-index: 1;
+    padding-top: 20px;
+    background: #e6f0ff;
+}
+
 .navbar {
     display: flex;
     align-items: center;
     color: #4f5361;
-    padding-top: 38px;
+    padding: 12px 0;
 }
 
 .navbar ul {
@@ -102,7 +110,7 @@ a {
 }
 
 .hero {
-    margin-top: 130px;
+    padding-top: 130px;
 }
 
 .hero .subtitle {
