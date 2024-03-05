@@ -6,6 +6,11 @@
     --primary-color: #0f1b4c;
 }
 
+html,
+body {
+    scroll-behavior: smooth;
+}
+
 html {
     font-size: 62.5%;
 }
@@ -42,6 +47,14 @@ a {
     position: relative;
 }
 
+.header-fixed {
+    position: sticky;
+    top: 0;
+    z-index: 1;
+    padding-top: 20px;
+    background: #e6f0ff;
+}
+
 .btn {
     display: inline-block;
     min-width: 100px;
@@ -59,14 +72,6 @@ a {
 }
 
 /* ********************************** */
-
-.header-fixed {
-    position: sticky;
-    top: 0;
-    z-index: 1;
-    padding-top: 20px;
-    background: #e6f0ff;
-}
 
 .navbar {
     display: flex;
@@ -534,6 +539,8 @@ a {
     background: #063183;
     height: 370px;
     position: relative;
+    display: flex;
+    align-items: center;
 }
 
 .subscribe .body .subtitle {
